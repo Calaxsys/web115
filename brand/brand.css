@@ -4,6 +4,7 @@ body {
 }
 
 body {
+  margin-inline: 4rem;
   background-color: #2D2824;
   color: #F9FAFD;
   font-family: Helvetica, Arial, sans-serif;
