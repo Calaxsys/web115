@@ -2,13 +2,14 @@ header {
   text-align: center;
   background-color: #3F612D;
   color: #FEFADC;
-  padding: 1.5rem;
+  padding-block: 1.5rem;
 }
 
 header>nav {
   display: flex;
-  justify-content: center;
-  gap: 2.5rem;
+  margin-inline: auto;
+  gap: 1rem;
+  max-width: fit-content;
 }
 
 header>nav>a {
@@ -73,6 +74,7 @@ footer>p {
 footer>nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-block: 2rem;
   margin-inline: 4rem;
 }
