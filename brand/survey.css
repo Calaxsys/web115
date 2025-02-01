@@ -85,3 +85,11 @@ textarea {
   font-size: 1.2rem;
   text-transform: uppercase;
 }
+
+#submit:hover {
+  background-color: #2D2824;
+  color: #F9FAFD;
+  border: 1px solid #2D2824;
+  scale: 1.01;
+  transition: all .3s;
+}
