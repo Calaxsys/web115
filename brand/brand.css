@@ -12,7 +12,33 @@ body {
   flex-direction: column;
 }
 
+header>nav {
+  display: flex;
+  margin-inline: auto;
+  gap: 1rem;
+  max-width: fit-content;
+}
+
+header>nav>a {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  color: #F9FAFD;
+}
+
+header>nav>a:hover {
+  scale: 1.1;
+  color: #FFBB20;
+  transition: all .45s;
+}
+
 h1 {
+  text-align: center;
+}
+
+.company-name {
   font-size: 3.5rem;
   line-height: 1;
 }
@@ -35,10 +61,10 @@ footer {
 
 footer>nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-block: 2rem;
   margin-inline: 4rem;
-
+  flex-wrap: wrap;
 }
 
 footer>nav>a {

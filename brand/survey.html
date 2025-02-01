@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="brand.css">
+    <link rel="stylesheet" href="survey.css">
+    <title>Chris Troublefield's Creative Tamarin | WEB115 | Survey Form</title>
+    <script
+      src="https://lint.page/kit/67ff88.js"
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Chris Troublefield's Creative Tamarin | WEB115 | Survey Form</h1>
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/introduction.html">Introduction</a>
+        <a href="/contract.html">Contract</a>
+        <a href="brand.html">Brand Guide</a>
+        <a href="survey.html">Survey</a>
+      </nav>
+    </header>
+    <main>
+      <div class="heading-container">
+        <h2>Our Survey</h2>
+        <p id="description">We value your input! Please take a moment to complete our survey.</p>
+      </div>
+      <form id="survey-form">
+        
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" placeholder="Enter your name" type="text" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your email" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label id="age-label" for="age">Age</label>
+          <input id="age" type="number" placeholder="Age" min="17" max="120" class="form-control" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="dropdown">What is your favorite game genre?</label>
+          <select id="dropdown" class="form-control" required>
+            <option value="">-- Please choose an option --</option>
+            <option value="action">Action</option>
+            <option value="rpg">Role-Playing Game (RPG)</option>
+            <option value="strategy">Strategy</option>
+            <option value="simulation">Simulation</option>
+            <option value="puzzle">Puzzle</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>How often do you play video games?</p>
+          <label for="daily">
+            <input type="radio" id="daily" value="daily" name="frequency" class="radio-control" checked>
+            Daily
+          </label>
+
+          <label for="weekly">
+            <input type="radio" id="weekly" value="weekly" name="frequency" class="radio-control">
+            Weekly
+          </label>
+          
+          <label for="monthly">
+            <input type="radio" id="monthly" value="monthly" name="frequency" class="radio-control">
+            Monthly
+          </label>
+        </div>
+        
+        <div class="form-group">
+          <p>What features are most important to you in a game? <br>(Select all that apply)</p>
+          
+          <label for="storyline"><input type="checkbox" id="storyline" value="storyline" name="features" class="checkbox-control">Engaging storyline</label>
+          
+          <label for="graphics"><input type="checkbox" id="graphics" value="graphics" name="features" class="checkbox-control">High-quality graphics</label>
+          
+          <label for="multiplayer"><input type="checkbox" id="multiplayer" value="multiplayer" name="features" class="checkbox-control">Multiplayer capabilities</label>
+          
+          <label for="customization"><input type="checkbox" id="customization" value="customization" name="features" class="checkbox-control">Character customization</label>
+        </div>
+
+        <div class="form-group">
+          <label for="feedback">What do you look for in a new game, and how can we improve your gaming experience?</label>
+          <textarea id="feedback" placeholder="Share your thoughts here..."></textarea>
+        </div>
+
+        <div class="form-group"><input id="submit" type="submit" value="Submit"></div>
+      </form>
+    </main>
+    <footer>
+      <p>Website Designed and Developed by Parker Web Design &copy; 2025</p>
+      <nav>
+        <a href="https://github.com/Calaxsys" target="_blank" rel="noopener">Github</a>
+        <a href="https://calaxsys.github.io/" target="_blank" rel="noopener">Github.io</a>
+        <a href="https://calaxsys.github.io/web115/" target="_blank" rel="noopener">WEB115.io</a>
+        <a href="https://www.freecodecamp.org/Calaxsys" target="_blank" rel="noopener">freeCodeCamp</a>
+        <a href="https://www.codecademy.com/profiles/Calaxsys" target="_blank" rel="noopener">Codecademy</a>
+        <a href="https://jsfiddle.net/u/Calaxsys/fiddles/" target="_blank" rel="noopener">JSFiddle</a>
+        <a href="https://www.linkedin.com/in/chris-troublefield/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </footer>
+  </body>
+</html>
