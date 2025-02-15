@@ -1,0 +1,95 @@
+#survey-form {
+  background-color: #FFBB20;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  color: #2D2824;
+  max-width: 50rem;
+  margin-inline: auto;
+}
+
+.heading-container {
+  max-width: 50rem;
+  margin-inline: auto;
+  font-size: 1.5rem;
+
+}
+
+.form-group {
+  margin-inline: auto;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: flex;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+form p {
+  font-size: 1.5rem;
+}
+
+input {
+  font-size: inherit;
+}
+
+.form-control {
+  box-sizing: border-box;
+  width: 70%;
+  padding: .5rem .75rem;
+  border-radius: .5rem;
+  border: 1px solid #F9FAFD;
+  color: #2D2824;
+  transition: .3s width;
+}
+
+.form-control[type="text"]:focus {
+  width: 100%;
+}
+
+.form-control[type="email"]:focus {
+  width: 100%;
+}
+
+.radio-control {
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.checkbox-control {
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+#submit {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 3rem;
+  cursor: pointer;
+  border: 1px solid #3DA35D;
+  background-color: #3DA35D;
+  color: #F9FAFD;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+#submit:hover {
+  background-color: #2D2824;
+  color: #F9FAFD;
+  border: 1px solid #2D2824;
+  scale: 1.01;
+  transition: all .3s;
+}
