@@ -13,14 +13,22 @@ document.getElementById('name-form').addEventListener('submit', function (event)
 
   document.getElementById('greeting').textContent = `${fullName}!`;
 
+  const counter = parseInt(prompt(`How high do you want to count, ${firstName}?`));
+
+  if (isNaN(counter) || counter <= 0) {
+    alert("Please enter a valid number.");
+    return;
+  }
+
   const wordList = document.getElementById('word-list');
   wordList.innerHTML = "";
 
   const words = ["Game Design", "Level Creation", "Boss Battles", "Open Worlds", "Player Choice", "Story Mode", "Power Ups", "Next Level"];
 
-  for (let i = 1; i <= 125; i++) {
+  for (let i = 1; i <= counter; i++) {
     let listItem = document.createElement('li');
-    listItem.textContent = `${words[i % words.length]}`;
+    let evenOrOdd = (i % 2 === 0) ? "The number is even" : "The number is odd";
+    listItem.textContent = `${words[i % words.length]} - ${evenOrOdd}`;
     wordList.appendChild(listItem);
   }
 });
