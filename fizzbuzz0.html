@@ -3,44 +3,44 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="brand.css">
+    <link rel="stylesheet" href="/brand/brand.css">
+    <link rel="stylesheet" href="/styles/fizzbuzz.css">
     <title>Creative Tamarin Studios | Brand Guide</title>
     <script
       src="https://lint.page/kit/67ff88.js"
       crossorigin="anonymous"></script>
+      <script src="scripts/fizzbuzz.js" defer></script>
   </head>
 
   <body>
     <header>
-      <h1>Chris Troublefield's Creative Tamarin | WEB115 | Brand Guide</h1>
+      <h1>Chris Troublefield's Creative Tamarin | Fizz Buzz 0</h1>
       <nav>
-        <a href="../index.html">Home</a>
-        <a href="../introduction.html">Introduction</a>
-        <a href="../contract.html">Contract</a>
-        <a href="brand.html">Brand Guide</a>
+        <a href="index.html">Home</a>
+        <a href="introduction.html">Introduction</a>
+        <a href="contract.html">Contract</a>
+        <a href="/brand/brand.html">Brand Guide</a>
         <a href="survey.html">Survey</a>
       </nav>
     </header>
     <main>
-        <h2 class="company-name">Creative 
-        <br><span class="txt-clr-primary">Tamarin</span> 
-        <br>Studios</h2>
-      <p>
-        <em>Creating immersive worlds and unforgettable stories that ignite <span class="txt-clr-primary">imagination.</span></em>
-      </p>
-      <ul>
-        <li><p>Primary Font: Helvetica</p></li>
-        <li><p>Secondary Font: Oswald</p></li>
-        <li><p>Primary Color: <span class="txt-clr-primary">#FFBB20</span></p></li>
-        <li><p>Secondary Color: #F9FAFD</p></li>
-        <li><p>Supporting Colors: 
-          <ul>
-            <li>#C99418</li>
-            <li>#3DA35D</li>
-          </ul>
-        </p></li>
-        <li><p>Background Color: #2D2824</p></li>
-      </ul>
+      <h2 class="company-name">Welcome to Creative 
+      <span class="txt-clr-primary">Tamarin</span> Studios
+      <br><span id="greeting" class="txt-clr-primary"></span></h2>
+      
+      <form id="name_form">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" placeholder="Enter your First name here" required>
+        
+        <label for="middle_initial">Middle Initial:</label>
+        <input type="text" id="middle_initial" placeholder="M" maxlength="1">
+        
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" placeholder="Enter your Last name here" required>
+        
+        <button type="submit">Submit</button>
+      </form>
+
     </main>
     <footer>
 

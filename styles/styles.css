@@ -1,3 +1,17 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #d2b48c;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: #050C15;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
 header {
   text-align: center;
   background-color: #3F612D;
@@ -5,7 +19,7 @@ header {
   padding-block: 1.5rem;
 }
 
-header>h1 {
+h1 {
   margin-top: 0;
 
 }
@@ -100,6 +114,10 @@ footer>nav>a:hover {
   background-color: #5f9542;
   scale: 1.1;
   transition: all .45s;
+}
+
+main a {
+  color: rgb(242, 85, 45);
 }
 
 main a:visited {
