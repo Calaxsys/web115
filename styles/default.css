@@ -116,12 +116,12 @@ footer>nav>a:hover {
   transition: all .45s;
 }
 
-main a {
+a {
   color: rgb(242, 85, 45);
 }
 
-main a:visited {
-  color: rgb(242, 85, 45);
+a:visited {
+  color: rgb(232, 110, 124);
 }
 
 @media screen and (max-width: 600px) {
