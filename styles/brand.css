@@ -14,6 +14,7 @@ body {
 
 header>nav {
   display: flex;
+  align-items: center;
   margin-inline: auto;
   gap: 1rem;
   max-width: fit-content;
@@ -45,6 +46,14 @@ h1 {
 
 .txt-clr-primary {
   color: #FFBB20;
+}
+
+.txt-clr-secondary {
+  color: #5fb50a;
+}
+
+.txt-clr-tertiary {
+  color: #3e6bef;
 }
 
 main {
