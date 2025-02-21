@@ -31,7 +31,7 @@ header>nav>a {
 
 header>nav>a:hover {
   scale: 1.1;
-  color: #FFBB20;
+  color: #81e524;
   transition: all .45s;
 }
 
@@ -39,8 +39,11 @@ h1 {
   text-align: center;
 }
 
-.company-name {
+h2 {
   font-size: 3.5rem;
+}
+
+.company-name {
   line-height: 1;
 }
 
@@ -49,11 +52,11 @@ h1 {
 }
 
 .txt-clr-secondary {
-  color: #5fb50a;
+  color: #056f9e;
 }
 
 .txt-clr-tertiary {
-  color: #3e6bef;
+  color: #81e524;
 }
 
 main {
