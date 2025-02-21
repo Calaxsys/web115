@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+#greeting {
+  text-align: center;
+}
+
 #name-form {
   display: flex;
   flex-direction: column;

@@ -10,7 +10,7 @@ function greeting() {
   }
   fullName += ` ${lastName}`;
 
-  document.getElementById('greeting').textContent = `${fullName}!`;
+  document.getElementById('greeting').textContent = `Welcome to Fizzbuzz ${fullName}!`;
 }
 
 // Check if a number is evenly divisble by a divisor

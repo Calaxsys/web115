@@ -11,7 +11,7 @@ document.getElementById('name-form').addEventListener('submit', function (event)
   }
   fullName += ` ${lastName}`;
 
-  document.getElementById('greeting').textContent = `${fullName}!`;
+  document.getElementById('greeting').textContent = `Welcome to Fizzbuzz ${fullName}!`;
 
   const counter = parseInt(prompt(`How high do you want to count, ${firstName}?`));
 
