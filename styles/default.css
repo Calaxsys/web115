@@ -91,7 +91,7 @@ a:visited {
   color: #ffcb51;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   header>nav {
     flex-direction: column;
     align-items: center;

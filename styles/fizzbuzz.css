@@ -29,12 +29,13 @@
 
 #name-form button {
   margin-top: auto;
-  padding: 1rem;
+  padding: .85rem;
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;
   font-size: 1.2rem;
   flex-grow: 1;
+  text-transform: uppercase;
 }
 
 #name-form button:hover {
