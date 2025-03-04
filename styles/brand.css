@@ -35,6 +35,15 @@ header>nav>a:hover {
   transition: all .45s;
 }
 
+header>p {
+  text-align: center;
+}
+
+header {
+  border-bottom: 5px solid #ffbb20;
+  border-radius: 15px;
+}
+
 h1 {
   text-align: center;
 }
@@ -52,7 +61,7 @@ h2 {
 }
 
 .txt-clr-secondary {
-  color: #056f9e;
+  color: #5ff4db;
 }
 
 .txt-clr-tertiary {
@@ -63,7 +72,7 @@ main {
   flex: 1 0 auto;
 }
 
-main>p {
+p {
   font-size: 1.5rem;
 }
 
