@@ -82,6 +82,10 @@ main>img {
   margin-inline: auto;
 }
 
+#intro-title {
+  text-align: center;
+}
+
 img {
   border-radius: 2rem;
   border: 5px solid black;
