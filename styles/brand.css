@@ -52,10 +52,6 @@ h2 {
   font-size: 3.5rem;
 }
 
-.company-name {
-  line-height: 1;
-}
-
 .txt-clr-primary {
   color: #FFBB20;
 }
@@ -66,6 +62,26 @@ h2 {
 
 .txt-clr-tertiary {
   color: #81e524;
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: #2D2824;
+}
+
+.brand-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFBB20;
+  margin: 1rem;
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1.5rem;
+}
+
+.inner-card {
+  background-color: #2D2824;
+  border-radius: 1.5rem;
 }
 
 main {
