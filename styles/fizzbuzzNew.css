@@ -9,14 +9,15 @@ main {
 
 form {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  justify-content: space-evenly;
   margin-inline: auto;
+  align-items: flex-start;
 }
 
 fieldset {
   border: 2px solid #FFBB20;
   border-radius: 0.5rem;
+
 }
 
 legend {
@@ -61,14 +62,13 @@ input[type='number'] {
 }
 
 button[type='submit'] {
-  padding: .85rem;
-  padding-inline: 15rem;
   cursor: pointer;
   border-radius: 0.5rem;
   border: none;
-  font-size: larger;
-  margin-inline: auto;
+  height: 95%;
+  align-self: flex-end;
   text-transform: uppercase;
+  font-size: large;
 }
 
 #name-form button:hover {
@@ -79,12 +79,15 @@ button[type='submit'] {
 
 #word-list {
   display: flex;
-  justify-content: space-between;
-  gap: 3.5rem;
+  flex-direction: column;
   flex-wrap: wrap;
+  max-height: 150rem;
+  gap: 3rem;
+  margin-inline: auto;
 }
 
 #word-list li {
   margin-bottom: 1rem;
+  max-width: 14ch;
   font-size: 1.3rem;
 }
