@@ -74,7 +74,7 @@ document.getElementById('name-form').addEventListener('submit', function (event)
   const wordList = document.getElementById('word-list');
   wordList.innerHTML = "";
 
-  const baseWord = "Game";
+  const baseWord = document.getElementById('default-word').value;
   const wordCount = getWordCount();
 
   for (let i = 1; i <= wordCount; i++) {

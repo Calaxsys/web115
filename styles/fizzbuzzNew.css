@@ -1,0 +1,90 @@
+h3 {
+  color: white;
+  margin: 0;
+}
+
+main {
+  max-width: 70rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-inline: auto;
+}
+
+fieldset {
+  border: 2px solid #FFBB20;
+  border-radius: 0.5rem;
+}
+
+legend {
+  color: #FFBB20;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4rem;
+  gap: .5rem;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  color: white;
+  max-width: 10rem;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+input[type='text'] {
+  padding: .5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+}
+
+input[type='number'] {
+  width: 3rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+button[type='submit'] {
+  width: 70%;
+  padding: .85rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: larger;
+  margin-inline: auto;
+  text-transform: uppercase;
+}
+
+#name-form button:hover {
+  background-color: #FFBB20;
+  scale: 1.03;
+  transition: scale 0.45s;
+}
+
+#word-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+}
+
+#word-list li {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
