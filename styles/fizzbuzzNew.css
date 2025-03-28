@@ -61,8 +61,8 @@ input[type='number'] {
 }
 
 button[type='submit'] {
-  width: 70%;
   padding: .85rem;
+  padding-inline: 15rem;
   cursor: pointer;
   border-radius: 0.5rem;
   border: none;
