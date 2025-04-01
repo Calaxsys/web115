@@ -12,6 +12,18 @@ body {
   flex-direction: column;
 }
 
+.logo {
+  border: none;
+  position: absolute;
+  left: 6rem;
+  bottom: 2rem;
+}
+
+header {
+  background-color: #745204;
+  position: relative;
+}
+
 header>nav {
   display: flex;
   align-items: center;
@@ -29,11 +41,13 @@ header>nav>a {
   color: #F9FAFD;
 }
 
-header>nav>a:hover {
+header>nav>.link:hover {
   scale: 1.1;
-  color: #81e524;
   transition: all .45s;
+  cursor: pointer;
+  color: #81e524;
 }
+
 
 header>p {
   text-align: center;
