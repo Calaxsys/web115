@@ -19,6 +19,11 @@ body {
   bottom: 2rem;
 }
 
+.brand-logo {
+  border: none;
+  margin-inline: auto;
+}
+
 header {
   background-color: #745204;
   position: relative;
