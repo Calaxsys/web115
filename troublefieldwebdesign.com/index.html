@@ -6,11 +6,119 @@
     <title>Troublefield Web Design</title>
     <script
       src="https://lint.page/kit/67ff88.js"
-      crossorigin="anonymous"></script>
-      <script src="scripts/HTMLInclude.js" defer></script>
-  </head>
+      crossorigin="anonymous">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: gray;
+        color: #f67532;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Raleway', Helvetica, sans-serif;
+        
+      }
 
+      .card-body {
+        box-sizing: border-box;
+        background-color: #1b1f22;
+        width: 50rem;
+        padding: 2rem;
+        padding-bottom: 1rem;
+        padding-right: 24rem;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      svg {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        margin-left: -2rem;
+      }
+
+      h2 {
+        letter-spacing: .15rem;
+      }
+
+      .company-name {
+        background-color: #f67532;
+        margin-left: -2rem;
+        padding-left: 2rem;
+        padding-block: .75rem;
+        box-shadow: -35px 52px 0px -36px #1b1f22;
+        
+      }
+
+      h1 {
+        color: #ecded6;
+        font-weight: 400;
+      }
+
+      .company-name > p {
+        color: #1b1f22;
+        font-size: 1.25rem;
+        letter-spacing: .25rem;
+        font-weight: 700;
+      }
+
+      .contact-info {
+        margin-top: 3rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+
+      .contact-line-item {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .bi {
+        background: #f67532;
+      }
+    </style>
+  </head>
   <body>
+    <main class="card-body">
+      
+      <h2>Christopher <br>
+        Troublefield</h2>
+      <div class="company-name">
+        <h1>Troublefield Web Design</h1>
+        <p>Web Development</p>
+      </div>
+      <div class="contact-info">
+        <div class="contact-line-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#1b1f22" class="bi bi-send-fill" viewBox="0 0 16 16">
+            <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+          </svg>
+          <p>troublefieldwebdesign.com</p>
+        </div>
+        <div class="contact-line-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#1b1f22" class="bi bi-telephone" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+          </svg>
+          <p>(980) 777 - 0000</p>
+        </div>
+
+      </div>
+      <!-- Background Lines as SVGs -->
+      <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="1000" height="20" fill="#2C373C" transform="rotate(51 0 0)" />
+        <rect x="0" y="0" width="1200" height="400" fill="#2C373C" transform="translate(340, -260) rotate(51 0 0)" />
+        <rect x="0" y="0" width="1200" height="200" fill="#1F272D" transform="translate(640, -260) rotate(51 0 0)" />
+        <rect x="0" y="0" width="1000" height="20" fill="#2C373C" transform="translate(700, -260) rotate(51 0 0)" />
+        <rect x="0" y="0" width="1000" height="20" fill="#1F272D" transform="translate(750, -260) rotate(51 0 0)" />
+      </svg>
+    </main>
   </body>
 
 </html>
