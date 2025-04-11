@@ -8,6 +8,11 @@ h1 {
   margin-top: 0;
 }
 
+li::marker {
+  font-size: 1.25rem;
+  vertical-align: center;
+}
+
 /* JADS Schedule */
 .schedule li {
   font-size: 1.2rem;
@@ -62,6 +67,10 @@ h1 {
   cursor: pointer;
 }
 
+.intro-sub {
+  color: #F9FAFD;
+}
+
 main {
   flex: 1 0 auto;
   padding: 1rem;
@@ -75,11 +84,18 @@ p {
   font-size: 1.2rem;
 }
 
+main>figure {
+  margin-inline: auto;
+}
+
 main>img {
   object-fit: contain;
   height: 30rem;
   width: fit-content;
-  margin-inline: auto;
+}
+
+figcaption {
+  text-align: center;
 }
 
 #intro-title {
@@ -93,10 +109,6 @@ img {
 
 a {
   color: #5ff4db;
-}
-
-a:visited {
-  color: #ffcb51;
 }
 
 @media screen and (max-width: 1000px) {
