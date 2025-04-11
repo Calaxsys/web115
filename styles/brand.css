@@ -53,7 +53,6 @@ header>nav>.link:hover {
   color: #81e524;
 }
 
-
 header>p {
   text-align: center;
 }
@@ -88,11 +87,24 @@ h3 {
   color: #2D2824;
 }
 
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: auto;
+  max-width: none;
+  margin-inline: 0;
+  column-gap: 1rem;
+}
+
+.company-name {
+  grid-column: 2 / -1;
+}
+
+
 .brand-card {
   display: flex;
   flex-direction: column;
   background-color: #FFBB20;
-  margin: 1rem;
   padding-inline: 1rem;
   padding-bottom: 1rem;
   border-radius: 1.5rem;
@@ -101,10 +113,6 @@ h3 {
 .inner-card {
   background-color: #2D2824;
   border-radius: 1.5rem;
-}
-
-main {
-  flex: 1 0 auto;
 }
 
 p {
