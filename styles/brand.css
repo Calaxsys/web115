@@ -15,8 +15,8 @@ body {
 .logo {
   border: none;
   position: absolute;
-  left: 6rem;
-  bottom: 2rem;
+  left: 2rem;
+  bottom: 3rem;
 }
 
 .brand-logo {
@@ -32,7 +32,7 @@ header>nav {
   display: flex;
   align-items: center;
   margin-inline: auto;
-  gap: 1rem;
+  gap: 2rem;
   max-width: fit-content;
 }
 
@@ -50,6 +50,14 @@ header>nav>.link:hover {
   transition: all .45s;
   cursor: pointer;
   color: #81e524;
+}
+
+.link {
+  padding: 0;
+}
+
+.link1 {
+  color: transparent;
 }
 
 header>p {
@@ -87,10 +95,10 @@ h3 {
 }
 
 .brand-grid {
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: auto;
-  max-width: 100%;
   margin-inline: 0;
   gap: 1rem;
 }
