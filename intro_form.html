@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/brand.css">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <title>Chris Troublefield's Creative Tamarin | WEB115 | Introduction Form</title>
+    <script
+      src="https://lint.page/kit/67ff88.js"
+      crossorigin="anonymous"></script>
+    <script src="scripts/HTMLInclude.js" defer></script>
+    <script src="scripts/intro_form.js" defer></script>
+  </head>
+
+  <body>
+  <div data-include="components/header.html"></div>
+  <main>
+    <form id="intro_form">
+      <label for="firstname">First Name:</label>
+      <input type="text" name="firstname" id="firstname" value="Christopher" required /><br>
+
+      <label for="middle_initial">Middle Initial:</label>
+      <input type="text" name="middle_initial" id="middle_initial" value="D" required /><br>
+
+      <label for="lastname">Last Name:</label>
+      <input type="text" name="lastname" id="lastname" value="Troublefield" required /><br>
+
+      <label for="nickname">Nickname:</label>
+      <input type="text" name="nickname" id="nickname" value="Chris" required /><br>
+
+      <label for="adjective">Adjective that starts with the first letter of your first name:</label>
+      <input type="text" name="adjective" id="adjective" value="Creative" required /><br>
+
+      <label for="animal">Animal, creature, or plant that starts with the first letter of your last name:</label>
+      <input type="text" name="animal" id="animal" value="Tamarin" required /><br>
+
+      <label for="personal_background">Personal Background:</label>
+      <textarea name="personal_background" id="personal_background" required>I was born in Winston-Salem, NC and I grew up in Salisbury, NC, now I live in Kannapolis, NC. Some of my hobbies include video games, and guitar when I am really in the mood for it, which is rare these days. I also enjoy movies and comic books!</textarea><br>
+
+      <label for="professional_background">Professional Background:</label>
+      <textarea name="professional_background" id="professional_background" required>I am currently a construction Superintendent at my company. Before that I hopped around various jobs trying to find what I wanted to do with my life. I have some professional experience developing and deploying a website for a small business.</textarea><br>
+
+      <label for="academic_background">Academic Background:</label>
+      <textarea name="academic_background" id="academic_background" required>I graduated from East Rowan High School in 2017, I’ve gone through various college programs trying to decide what degree I wanted and I finally landed on Full Stack Programming.</textarea><br>
+
+      <label for="subject_background">Background in this Subject:</label>
+      <textarea name="subject_background" id="subject_background" required> I have been programming for a little over 2 years now, all of my knowledge prior to starting at CPCC has been self-taught through various projects I decided to take on. I have professionally designed, developed and deployed one website.</textarea><br>
+
+      <label for="computer_type">Primary Computer Platform:</label> 
+      <input type="text" name="computer_type" id="computer_type" value="M2 MacBook Air" required /><br>
+
+      <fieldset>
+        <legend>Courses I'm Taking and Why:</legend>
+        <div id="course_container">
+          <div class="course">
+            <label for="course[0]name">Course Name:</label>
+            <input type="text" name="course[0]name" id="course[0]name"><br>
+            <label for="course[0]reason">Reason for Taking:</label>
+            <textarea name="course[0]reason" id="course[0]reason">I needed this class for my degree, but I also wanted a structured class to help me learn some more skills I may not know.</textarea><br>
+          </div>
+
+          <div class="course">
+            <label for="course[1]name">Course Name:</label>
+            <input type="text" name="course[1]name" id="course[1]name"><br>
+            <label for="course[1]reason">Reason for Taking:</label>
+            <textarea name="course[1]reason" id="course[1]reason">I needed this class for my degree, but I also wanted a structured class to help me learn some more skills I may not know.</textarea><br>
+          </div>
+
+        </div>
+        <button type="button" onclick="addCourse()">+ Add Course</button>
+                 
+      </fieldset>
+      <label for="interesting_fact">Funny/Interesting item about yourself</label>
+      <textarea name="interesting_fact" id="interesting_fact">I like to make movie prop replicas through 3D printing.</textarea><br>
+
+
+      <button type="submit">Submit Form</button>
+    </form>
+
+    <section id="form_output"></section>
+  </main>
+  <div data-include="components/footer.html"></div>
+  </body>
+</html>
