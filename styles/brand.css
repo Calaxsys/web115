@@ -164,3 +164,73 @@ footer>nav>a:hover {
     list-style-type: none;
   }
 }
+
+/* Intro Form Styling */
+textarea {
+  resize: none;
+  padding: .5rem;
+  font-size: 1.2rem;
+}
+
+.intro_form_main {
+  max-width: 80%;
+  font-size: 1.2rem;
+}
+
+.form-flex {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: .5rem;
+  justify-content: space-between;
+}
+
+.form-flex label {
+  margin-right: 1rem;
+}
+
+.intro-form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.intro-txt-group {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+input {
+  font-size: 1.175rem;
+  padding: .25rem;
+}
+
+.course {
+  padding: .5rem;
+}
+
+.course input {
+  width: 40ch;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button[type='submit'] {
+  padding-block: 2rem;
+  width: 100%;
+  font-size: 1.2rem;
+}

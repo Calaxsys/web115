@@ -19,7 +19,6 @@ function addCourse() {
 
 function courseToPage() {
   let i = 0;
-
   while (true) {
     const nameInput = document.getElementById(`course[${i}]name`);
     const reasonInput = document.getElementById(`course[${i}]reason`);
@@ -40,8 +39,20 @@ function courseToPage() {
   }
 }
 
+function hideForm() {
+  document.getElementById('intro_form').style.display = "none";
+}
+
+function showForm() {
+  document.getElementById('intro_form').style.display = "block";
+  document.getElementById('show_form_btn').style.display = 'none';
+}
+
 document.getElementById('intro_form').addEventListener('submit', function (event) {
   event.preventDefault();
+  courseToPage();
+  hideForm();
+
 
   const output = document.getElementById('form_output');
   const firstName = document.getElementById('firstname').value;
@@ -57,6 +68,7 @@ document.getElementById('intro_form').addEventListener('submit', function (event
   const academicBackground = document.querySelector('label[for="academic_background"]').textContent;
   const subjectBackground = document.querySelector('label[for="subject_background"]').textContent;
   const computerLabel = document.querySelector('label[for="computer_type"]').textContent;
+  const interestingFact = document.querySelector('label[for="interesting_fact"]').textContent;
 
   // Pulling values from form submission
   const personalBgInfo = document.getElementById('personal_background').value;
@@ -64,6 +76,7 @@ document.getElementById('intro_form').addEventListener('submit', function (event
   const academicBgInfo = document.getElementById('academic_background').value;
   const subjectBgInfo = document.getElementById('subject_background').value;
   const computerValue = document.getElementById('computer_type').value;
+  const interestingFactInfo = document.getElementById('interesting_fact').value;
 
   // Combine names together
   let fullName = firstName;
@@ -73,6 +86,7 @@ document.getElementById('intro_form').addEventListener('submit', function (event
   fullName += ` ${lastName}`;
 
   output.innerHTML = `
+    <button id="show_form_btn" type="button">Show Form Again</button>
     <h2 class="form_name">${fullName} | ${adjective} ${animal}</h2>
     <div>
       <ul>
@@ -91,7 +105,22 @@ document.getElementById('intro_form').addEventListener('submit', function (event
         <li>
           <p><strong>${computerLabel}</strong> ${computerValue}</p>
         </li>
+        <li>
+          <p><strong>Courses that I am Taking and Why</strong></p>
+          <ol>
+            <li><p><strong>${courseLabelsAndValues[0].nameValue}</strong> - ${courseLabelsAndValues[0].reasonValue}</p></li>
+            <li><p><strong>${courseLabelsAndValues[1].nameValue}</strong> - ${courseLabelsAndValues[1].reasonValue}</p></li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>${interestingFact}:</strong> ${interestingFactInfo}</p>
+        </li>        
       </ul>
     </div>
   `;
+
+  document.getElementById('show_form_btn').addEventListener('click', function (e) {
+    e.preventDefault;
+    showForm();
+  });
 });
