@@ -8,9 +8,14 @@ function addCourse() {
   div.className = 'course_entry';
 
   div.innerHTML = `
-    <label for="course_${courseCount}">
-      <textarea name="course_${courseCount}" id="course_${courseCount}" placeholder="Reason for taking this course...." required></textarea>
-    </label>
+    <div class="form-group">
+      <label for="course[${courseCount}]name">Course Name:</label>
+      <input type="text" name="course[${courseCount}]name" id="course[${courseCount}]name" placeholder="Enter course name">
+    </div>
+    <div class="intro-txt-group">
+      <label for="course[${courseCount}]reason">Reason for Taking:</label>
+      <textarea name="course[${courseCount}]reason" id="course[${courseCount}]reason" cols="50" rows="5" placeholder="Reason for taking this course..."></textarea>
+    </div>
   `;
 
   container.appendChild(div);
@@ -24,6 +29,17 @@ function courseToPage() {
     const reasonInput = document.getElementById(`course[${i}]reason`);
 
     if (!nameInput || !reasonInput) break;
+
+    const nameValue = nameInput.value.trim();
+    const reasonValue = reasonInput.value.trim();
+
+
+    // Skip this entry if either field is empty
+    if (!nameValue || !reasonValue) {
+      i++;
+      continue;
+    }
+
 
     const nameLabel = document.querySelector(`label[for="course[${i}]name"]`).textContent;
     const reasonLabel = document.querySelector(`label[for="course[${i}]reason"]`).textContent;
@@ -85,6 +101,10 @@ document.getElementById('intro_form').addEventListener('submit', function (event
   }
   fullName += ` ${lastName}`;
 
+  if (nickname) {
+    fullName += ` "${nickname}"`;
+  }
+
   output.innerHTML = `
     <button id="show_form_btn" type="button">Show Form Again</button>
     <h2 class="form_name">${fullName} | ${adjective} ${animal}</h2>
@@ -107,17 +127,28 @@ document.getElementById('intro_form').addEventListener('submit', function (event
         </li>
         <li>
           <p><strong>Courses that I am Taking and Why</strong></p>
-          <ol>
-            <li><p><strong>${courseLabelsAndValues[0].nameValue}</strong> - ${courseLabelsAndValues[0].reasonValue}</p></li>
-            <li><p><strong>${courseLabelsAndValues[1].nameValue}</strong> - ${courseLabelsAndValues[1].reasonValue}</p></li>
+          <ol id="course_list_output">
+            ${courseLabelsAndValues.map((course, i) => `
+            <li data-index="${i}">
+            <p><strong>${course.nameValue}</strong> - ${course.reasonValue}</p>
+            <button type="button" class="delete_course_btn">Delete Course</button>
+            </li>
+            `).join('')}
           </ol>
         </li>
         <li>
-          <p><strong>${interestingFact}:</strong> ${interestingFactInfo}</p>
+          <p><strong>${interestingFact}</strong> ${interestingFactInfo}</p>
         </li>        
       </ul>
     </div>
   `;
+
+  document.querySelectorAll('.delete_course_btn').forEach((button) => {
+    button.addEventListener('click', function () {
+      const li = this.closest('li');
+      li.remove();
+    });
+  });
 
   document.getElementById('show_form_btn').addEventListener('click', function (e) {
     e.preventDefault;

@@ -234,3 +234,18 @@ button[type='submit'] {
   width: 100%;
   font-size: 1.2rem;
 }
+
+.delete_course_btn {
+  width: 40%;
+  padding-block: 1rem;
+  transition: background-color 0.4s;
+}
+
+.delete_course_btn:hover {
+  background-color: #FFBB20;
+
+}
+
+.form_name {
+  font-size: 2.5rem;
+}
