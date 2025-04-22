@@ -140,3 +140,8 @@ a {
   }
 
 }
+
+#survey,
+#brand_guide {
+  max-width: 95%;
+}

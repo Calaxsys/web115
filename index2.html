@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/default.css">
     <link rel="stylesheet" href="styles/brand.css">
+    <link rel="stylesheet" href="styles/survey.css">
+    <style>
+      main {
+        max-width: 90%;
+        margin-inline: 4rem;
+      }
+    </style>
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <title>Chris Troublefield's Creative Tamarin Studios | WEB115 | index2</title>
@@ -12,24 +19,26 @@
       src="https://lint.page/kit/67ff88.js"
       crossorigin="anonymous"></script>
     <script src="scripts/HTMLInclude.js" defer></script>
+    <script src="scripts/changePage.js" defer></script>
+
   </head>
 
   <body>
     <header>
       <h1>Chris Troublefield's Creative Tamarin Studios | WEB115</h1>
       <nav>
-        <a href="index.html" class="logo-link">
+        <a href="#" class="logo-link" data-target="index">
           <img src="images/creative_tamarin_logo.png" alt="Creative Tamarin Studios Logo" class="logo" height="128" width="128">
         </a>
 
-        <a href="index.html" class="link link1">Home</a>
-        <a href="introduction.html" class="link">Introduction</a>
-        <a href="contract.html" class="link">Contract</a>
-        <a href="brand.html" class="link">Brand Guide</a>
-        <a href="survey.html" class="link">Survey</a>
-        <a href="jads_outline.html" class="link">JADS Outline</a>
+        <a href="#" class="link link1">Home</a>
+        <a href="#" class="link" data-target="introduction">Introduction</a>
+        <a href="#" class="link" data-target="contract">Contract</a>
+        <a href="#" class="link" data-target="brand_guide">Brand Guide</a>
+        <a href="#" class="link" data-target="survey">Survey</a>
+        <a href="#" class="link" data-target="jads">JADS Outline</a>
         <a href="one_page_site/index.html" class="link" target="_blank" rel="noopener">One-Page Site</a>
-        <a href="index2.html" class="link">Home2</a>
+        <a href="#" class="link" data-target="index">Home2</a>
         <div class="dropdown">
           <button class="drop-btn">Fizzbuzz
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
