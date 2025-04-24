@@ -93,10 +93,6 @@ p {
   font-size: 1.2rem;
 }
 
-main>figure {
-  margin-inline: auto;
-}
-
 main>img {
   object-fit: contain;
   height: 30rem;

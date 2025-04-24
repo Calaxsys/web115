@@ -22,6 +22,16 @@ function addCourse() {
   courseCount++;
 }
 
+function deleteCourse() {
+  const container = document.getElementById('course_container');
+  const entries = container.getElementsByClassName('course_entry');
+
+  if (entries.length > 0) {
+    container.removeChild(entries[entries.length - 1]);
+    courseCount--;
+  }
+}
+
 function courseToPage() {
   let i = 0;
   while (true) {
@@ -96,18 +106,22 @@ document.getElementById('intro_form').addEventListener('submit', function (event
 
   // Combine names together
   let fullName = firstName;
+
   if (middle) {
     fullName += ` ${middle}.`;
   }
-  fullName += ` ${lastName}`;
 
   if (nickname) {
     fullName += ` "${nickname}"`;
   }
 
+  fullName += ` ${lastName}`;
+
   output.innerHTML = `
     <button id="show_form_btn" type="button">Show Form Again</button>
-    <h2 class="form_name">${fullName} | ${adjective} ${animal}</h2>
+    <h2 id="intro-title">Introduction</h2>
+    <h3 class="intro-sub">${fullName} |<br> ${adjective} ${animal}</h3>
+    <figure id="photo_output"></figure>
     <div>
       <ul>
         <li>
@@ -131,7 +145,6 @@ document.getElementById('intro_form').addEventListener('submit', function (event
             ${courseLabelsAndValues.map((course, i) => `
             <li data-index="${i}">
             <p><strong>${course.nameValue}</strong> - ${course.reasonValue}</p>
-            <button type="button" class="delete_course_btn">Delete Course</button>
             </li>
             `).join('')}
           </ol>
@@ -143,12 +156,34 @@ document.getElementById('intro_form').addEventListener('submit', function (event
     </div>
   `;
 
-  document.querySelectorAll('.delete_course_btn').forEach((button) => {
-    button.addEventListener('click', function () {
-      const li = this.closest('li');
-      li.remove();
-    });
-  });
+  const photoInput = document.getElementById('profile_photo');
+  const photoOutput = document.getElementById('photo_output');
+
+  photoOutput.innerHTML = '';
+
+  const altText = document.getElementById('photo_alt').value || 'Submitted Photo';
+  const img = document.createElement('img');
+  const caption = document.createElement('figcaption');
+
+  img.alt = altText;
+  img.width = 360;
+  img.height = 480;
+  caption.innerHTML = `<em>${altText}</em>`;
+
+  if (photoInput.files && photoInput.files[0]) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      img.src = e.target.result;
+      photoOutput.appendChild(img);
+      photoOutput.appendChild(caption);
+    };
+    reader.readAsDataURL(photoInput.files[0]);
+  } else {
+    // Use default image if none uploaded
+    img.src = 'images/chris_photo.jpeg';
+    photoOutput.appendChild(img);
+    photoOutput.appendChild(caption);
+  }
 
   document.getElementById('show_form_btn').addEventListener('click', function (e) {
     e.preventDefault;

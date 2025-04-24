@@ -82,7 +82,7 @@
       <fieldset>
         <legend>Courses I'm Taking and Why:</legend>
         <div id="course_container">
-          <div class="course">
+          <div class="course_entry">
             <div class="form-group">
               <label for="course[0]name">Course Name:</label>
               <input type="text" name="course[0]name" id="course[0]name" value="WEB115 Web Markup and Scripting">
@@ -93,7 +93,7 @@
             </div>
           </div>
 
-          <div class="course">
+          <div class="course_entry">
             <div class="form-group">
               <label for="course[1]name">Course Name:</label>
               <input type="text" name="course[1]name" id="course[1]name" value="CTI130 OS and Device Foundations">
@@ -106,6 +106,7 @@
 
         </div>
         <button type="button" onclick="addCourse()">+ Add Course</button>
+        <button type="button" onclick="deleteCourse()">- Delete Course</button>
 
       </fieldset>
 
@@ -114,11 +115,21 @@
         <textarea name="interesting_fact" id="interesting_fact" cols="50" rows="5" required>I like to make movie prop replicas through 3D printing.</textarea>
       </div>
 
+      <div class="intro-form-group">
+        <label for="profile_photo">Upload a Photo:</label>
+        <input type="file" id="profile_photo" name="profile_photo" accept="image/*" />
+      </div>
+
+      <div class="intro-form-group">
+        <label for="photo_alt">Photo Description (Alt Text):</label>
+        <input type="text" id="photo_alt" name="photo_alt" value="With my son Parker" />
+      </div>
 
       <button type="submit">Submit Form</button>
     </form>
 
-    <div id="form_output"></div>
+    <div id="form_output">
+    </div>
   </main>
   <div data-include="components/footer.html"></div>
   </body>
