@@ -25,6 +25,9 @@ document.querySelectorAll('header nav a, div a').forEach((link) => {
       section.style.display = section.id === targetId ? 'block' : 'none';
     });
 
+    const pageTitle = this.getAttribute('data-title') || targetId;
+    document.title = `Chris Troublefield's Creative Tamarin Studios | WEB115 | ${pageTitle}`;
+
     // Load specific sections respective JS script file
     loadScriptForSection(targetId);
   });
