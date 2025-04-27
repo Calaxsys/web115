@@ -18,6 +18,10 @@ function loadScriptForSection(sectionId) {
 
 document.querySelectorAll('header nav a, div a').forEach((link) => {
   link.addEventListener('click', function (e) {
+    if (this.classList.contains('no-dynamic')) {
+      // Allow normal behavior
+      return;
+    }
     e.preventDefault();
     const targetId = this.getAttribute('data-target');
 
