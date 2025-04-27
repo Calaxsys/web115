@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/default.css">
-    <link rel="stylesheet" href="styles/brand.css">
-    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <title>Chris Troublefield's Creative Tamarin | WEB115 | Introduction Form</title>
-    <script
-      src="https://lint.page/kit/67ff88.js"
-      crossorigin="anonymous"></script>
-    <script src="scripts/HTMLInclude.js" defer></script>
-    <script src="scripts/introForm.js" defer></script>
-    <style>
-      body {
-        box-sizing: border-box;
-      }
-    </style>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Chris Troublefield's Creative Tamarin | WEB115 | Introduction Form</title>
+  <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
+  <script src="scripts/HTMLInclude.js" defer></script>
+  <script src="scripts/introForm.js" defer></script>
+</head>
+
+<body>
   <div data-include="components/header.html"></div>
   <main class="intro_form_main">
     <form id="intro_form">
@@ -42,7 +35,7 @@
         <label for="nickname">Nickname (Optional)</label>
         <input type="text" name="nickname" id="nickname" value="Chris" required />
       </div>
-        
+
       <div class="intro-form-group">
         <label for="adjective">Adjective that starts with the first letter of your first name:</label>
         <input type="text" name="adjective" id="adjective" value="Creative" required />
@@ -56,22 +49,25 @@
       <div class="intro-txt-group">
         <label for="personal_background">Personal Background:</label>
         <textarea name="personal_background" id="personal_background" cols="50"
-        rows="5">I was born in Winston-Salem, NC and I grew up in Salisbury, NC, now I live in Kannapolis, NC. Some of my hobbies include video games, and guitar when I am really in the mood for it, which is rare these days. I also enjoy movies and comic books!</textarea>
+          rows="5">I was born in Winston-Salem, NC and I grew up in Salisbury, NC, now I live in Kannapolis, NC. Some of my hobbies include video games, and guitar when I am really in the mood for it, which is rare these days. I also enjoy movies and comic books!</textarea>
       </div>
 
       <div class="intro-txt-group">
         <label for="professional_background">Professional Background:</label>
-        <textarea name="professional_background" id="professional_background" cols="50" rows="5" required>I am currently a construction Superintendent at my company. Before that I hopped around various jobs trying to find what I wanted to do with my life. I have some professional experience developing and deploying a website for a small business.</textarea>
+        <textarea name="professional_background" id="professional_background" cols="50" rows="5"
+          required>I am currently a construction Superintendent at my company. Before that I hopped around various jobs trying to find what I wanted to do with my life. I have some professional experience developing and deploying a website for a small business.</textarea>
       </div>
 
       <div class="intro-txt-group">
         <label for="academic_background">Academic Background:</label>
-        <textarea name="academic_background" id="academic_background" cols="50" rows="5" required>I graduated from East Rowan High School in 2017, I’ve gone through various college programs trying to decide what degree I wanted and I finally landed on Full Stack Programming.</textarea>
+        <textarea name="academic_background" id="academic_background" cols="50" rows="5"
+          required>I graduated from East Rowan High School in 2017, I’ve gone through various college programs trying to decide what degree I wanted and I finally landed on Full Stack Programming.</textarea>
       </div>
 
       <div class="intro-txt-group">
         <label for="subject_background">Background in this Subject:</label>
-        <textarea name="subject_background" id="subject_background" cols="50" rows="5" required>I have been programming for a little over 2 years now, all of my knowledge prior to starting at CPCC has been self-taught through various projects I decided to take on. I have professionally designed, developed and deployed one website.</textarea>
+        <textarea name="subject_background" id="subject_background" cols="50" rows="5"
+          required>I have been programming for a little over 2 years now, all of my knowledge prior to starting at CPCC has been self-taught through various projects I decided to take on. I have professionally designed, developed and deployed one website.</textarea>
       </div>
 
       <div class="intro-form-group">
@@ -89,7 +85,8 @@
             </div>
             <div class="intro-txt-group">
               <label for="course[0]reason">Reason for Taking:</label>
-              <textarea name="course[0]reason" id="course[0]reason" cols="50" rows="5" required>I needed this class for my degree, but I also wanted a structured class to help me learn some more skills I may not know.</textarea>
+              <textarea name="course[0]reason" id="course[0]reason" cols="50" rows="5"
+                required>I needed this class for my degree, but I also wanted a structured class to help me learn some more skills I may not know.</textarea>
             </div>
           </div>
 
@@ -100,7 +97,8 @@
             </div>
             <div class="intro-txt-group">
               <label for="course[1]reason">Reason for Taking:</label>
-              <textarea name="course[1]reason" id="course[1]reason" cols="50" rows="5" required>This class was also required for my degree, but I love the opportunity to dive into the inner workings of computers.</textarea>
+              <textarea name="course[1]reason" id="course[1]reason" cols="50" rows="5"
+                required>This class was also required for my degree, but I love the opportunity to dive into the inner workings of computers.</textarea>
             </div>
           </div>
 
@@ -112,7 +110,8 @@
 
       <div class="intro-txt-group">
         <label for="interesting_fact">Funny/Interesting item about yourself:</label>
-        <textarea name="interesting_fact" id="interesting_fact" cols="50" rows="5" required>I like to make movie prop replicas through 3D printing.</textarea>
+        <textarea name="interesting_fact" id="interesting_fact" cols="50" rows="5"
+          required>I like to make movie prop replicas through 3D printing.</textarea>
       </div>
 
       <div class="intro-form-group">
@@ -132,5 +131,6 @@
     </div>
   </main>
   <div data-include="components/footer.html"></div>
-  </body>
+</body>
+
 </html>
