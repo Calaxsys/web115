@@ -266,7 +266,7 @@ form {
   align-items: baseline;
 }
 
-#intro_form {
+#intro-form {
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
