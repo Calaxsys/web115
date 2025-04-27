@@ -11,7 +11,7 @@ form {
   display: flex;
   justify-content: space-evenly;
   margin-inline: auto;
-  align-items: flex-start;
+  align-items: center;
 }
 
 fieldset {
@@ -32,7 +32,7 @@ legend {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.4rem;
+  /* margin-bottom: 1.4rem; */
   gap: .5rem;
 }
 
