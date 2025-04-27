@@ -120,7 +120,7 @@ document.getElementById('intro_form').addEventListener('submit', function (event
   output.innerHTML = `
     <button id="show_form_btn" type="button">Show Form Again</button>
     <h2 id="intro-title">Introduction</h2>
-    <h3 class="intro-sub">${fullName} |<br> ${adjective} ${animal}</h3>
+    <h3 class="intro-sub">${fullName} | ${adjective} ${animal}</h3>
     <figure id="photo_output"></figure>
     <div>
       <ul>

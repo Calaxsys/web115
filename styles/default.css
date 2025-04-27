@@ -89,10 +89,6 @@ main {
   margin-inline: auto;
 }
 
-p {
-  font-size: 1.2rem;
-}
-
 main>img {
   object-fit: contain;
   height: 30rem;
@@ -100,10 +96,6 @@ main>img {
 }
 
 figcaption {
-  text-align: center;
-}
-
-#intro-title {
   text-align: center;
 }
 
