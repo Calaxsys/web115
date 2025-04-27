@@ -1,8 +1,8 @@
 // Get users name and output a greeting
 function greeting() {
-  const firstName = document.getElementById('first-name').value;
-  const middleInitial = document.getElementById('middle-initial').value;
-  const lastName = document.getElementById('last-name').value;
+  const firstName = document.getElementById('first-name-4').value;
+  const middleInitial = document.getElementById('middle-initial-4').value;
+  const lastName = document.getElementById('last-name-4').value;
 
   let fullName = firstName;
   if (middleInitial) {
@@ -10,7 +10,7 @@ function greeting() {
   }
   fullName += ` ${lastName}`;
 
-  document.getElementById('greeting').textContent = `Welcome to Fizzbuzz ${fullName}!`;
+  document.getElementById('greeting4').textContent = `Welcome to Fizzbuzz ${fullName}!`;
 }
 
 // Get the 3 numbers to divide by
@@ -65,13 +65,13 @@ function getWord(num, baseWord) {
   return words.length > 0 ? words.join(", ") : baseWord;
 }
 
-document.getElementById('name-form').addEventListener('submit', function (event) {
+document.getElementById('name-form-4').addEventListener('submit', function (event) {
   event.preventDefault();
 
   greeting();
   const [firstDivisor, secondDivisor, thirdDivisor] = getDivisors();
 
-  const wordList = document.getElementById('word-list');
+  const wordList = document.getElementById('word-list-4');
   wordList.innerHTML = "";
 
   const baseWord = document.getElementById('default-word').value;

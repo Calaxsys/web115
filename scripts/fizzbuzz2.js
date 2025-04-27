@@ -1,8 +1,8 @@
 // Get users name and output a greeting
 function greeting() {
-  const firstName = document.getElementById('first-name').value;
-  const middleInitial = document.getElementById('middle-initial').value;
-  const lastName = document.getElementById('last-name').value;
+  const firstName = document.getElementById('first-name-2').value;
+  const middleInitial = document.getElementById('middle-initial-2').value;
+  const lastName = document.getElementById('last-name-2').value;
 
   let fullName = firstName;
   if (middleInitial) {
@@ -10,7 +10,7 @@ function greeting() {
   }
   fullName += ` ${lastName}`;
 
-  document.getElementById('greeting').textContent = `Welcome to Fizzbuzz ${fullName}!`;
+  document.getElementById('greeting2').textContent = `Welcome to Fizzbuzz ${fullName}!`;
 }
 
 // Check if a number is evenly divisble by a divisor
@@ -36,13 +36,13 @@ function getWord(num, baseWord) {
   return words.length > 0 ? words.join(", ") : baseWord;
 }
 
-document.getElementById('name-form').addEventListener('submit', function (event) {
+document.getElementById('name-form-2').addEventListener('submit', function (event) {
   event.preventDefault();
 
   greeting();
 
-  const wordList = document.getElementById('word-list');
-  wordList.innerHTML = "";
+  const wordList2 = document.getElementById('word-list-2');
+  wordList2.innerHTML = "";
 
   const baseWord = "Game";
   const wordcount = 140;
@@ -64,7 +64,7 @@ document.getElementById('name-form').addEventListener('submit', function (event)
       listItem.classList.add('txt-clr-tertiary');
     }
 
-    wordList.appendChild(listItem);
+    wordList2.appendChild(listItem);
   }
 });
 

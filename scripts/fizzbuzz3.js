@@ -1,8 +1,8 @@
 // Get users name and output a greeting
 function greeting() {
-  const firstName = document.getElementById('first-name').value;
-  const middleInitial = document.getElementById('middle-initial').value;
-  const lastName = document.getElementById('last-name').value;
+  const firstName = document.getElementById('first-name-3').value;
+  const middleInitial = document.getElementById('middle-initial-3').value;
+  const lastName = document.getElementById('last-name-3').value;
 
   let fullName = firstName;
   if (middleInitial) {
@@ -10,7 +10,7 @@ function greeting() {
   }
   fullName += ` ${lastName}`;
 
-  document.getElementById('greeting').textContent = `Welcome to Fizzbuzz ${fullName}!`;
+  document.getElementById('greeting3').textContent = `Welcome to Fizzbuzz ${fullName}!`;
 }
 
 // Check if a number is evenly divisble by a divisor
@@ -42,12 +42,12 @@ function getWord(num, baseWord) {
   return words.length > 0 ? words.join(", ") : baseWord;
 }
 
-document.getElementById('name-form').addEventListener('submit', function (event) {
+document.getElementById('name-form-3').addEventListener('submit', function (event) {
   event.preventDefault();
 
   greeting();
 
-  const wordList = document.getElementById('word-list');
+  const wordList = document.getElementById('word-list-3');
   wordList.innerHTML = "";
 
   const baseWord = "Game";
