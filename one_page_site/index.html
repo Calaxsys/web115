@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
+    defer></script>
 </head>
 
 <body class="is-boxed has-animations">
@@ -20,45 +23,41 @@
         <div class="site-header-inner">
           <div class="brand header-brand">
             <h1 class="m-0">
-              <a href="#">
-                <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <title>Evelyn</title>
-                  <defs>
-                    <radialGradient cy="0%" fx="50%" fy="0%" r="100%" id="logo-gradient">
-                      <stop stop-color="#FFF" offset="0%" />
-                      <stop stop-color="#FFF" stop-opacity=".24" offset="100%" />
-                    </radialGradient>
-                  </defs>
-                  <path
-                    d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zm0-10a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
-                    fill="url(#logo-gradient)" fill-rule="evenodd" />
-                </svg>
-              </a>
-            </h1>
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Introduction</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Contract</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Brand Guide</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Survey</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">JADS</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">One-Page Template</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Intro-Form</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Home-2</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Home-3</a></li>
-            </ul>
-            <div class="dropdown show">
-              <a class="btn btn-sm btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Fizzbuzz
+
+              <a href="index.html" class="logo-link no-dynamic">
+                <img src="/images/creative_tamarin_logo.png" alt="Creative Tamarin Studios Logo" class="logo"
+                  height="128" width="128">
               </a>
 
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Fizzbuzz</a>
-                <a class="dropdown-item" href="#">Fizzbuzz 1</a>
-                <a class="dropdown-item" href="#">Fizzbuzz 2</a>
-                <a class="dropdown-item" href="#">Fizzbuzz 3</a>
-                <a class="dropdown-item" href="#">Fizzbuzz 4</a>
+            </h1>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="/index.html" class="nav-link px-2 ">Home</a></li>
+              <li><a href="#" data-target="Introduction" class="nav-link px-2 text-white">Introduction</a></li>
+              <li><a href="#" data-target="Contract" class="nav-link px-2 text-white">Contract</a></li>
+              <li><a href="#" data-target="BrandGuide" class="nav-link px-2 text-white">Brand Guide</a></li>
+              <li><a href="#" data-target="Survey" class="nav-link px-2 text-white">Survey</a></li>
+              <li><a href="#" data-target="JADS" class="nav-link px-2 text-white">JADS</a></li>
+              <li><a href="/one_page_site_original/index.html" class="nav-link px-2 text-white">One-Page Template</a>
+              </li>
+              <li><a href="/intro_form.html" class="nav-link px-2 text-white">Intro-Form</a></li>
+              <li><a href="/index2.html" class="nav-link px-2 text-white">Home-2</a></li>
+              <li><a href="/one_page_site/index.html" class="nav-link px-2 text-white">Home-3</a></li>
+            </ul>
+            <div class="dropdown">
+              <button class="drop-btn">Fizzbuzz
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                  class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4" />
+                </svg>
+              </button>
+              <div class="dropdown-content">
+                <a href="/fizzbuzz0.html" data-target="fizzbuzz">FizzBuzz 0</a>
+                <a href="/fizzbuzz1.html" data-target="fizzbuzz1">FizzBuzz 1</a>
+                <a href="/fizzbuzz2.html" data-target="fizzbuzz2">Fizzbuzz 2</a>
+                <a href="/fizzbuzz3.html" data-target="fizzbuzz3">Fizzbuzz 3</a>
+                <a href="/fizzbuzz4.html" data-target="fizzbuzz4">Fizzbuzz 4</a>
+                <a href="/intro_form.html" data-target="introForm">Intro Form</a>
               </div>
             </div>
           </div>
@@ -336,23 +335,7 @@
     <footer class="site-footer">
       <div class="container">
         <div class="site-footer-inner">
-          <div class="brand footer-brand">
-            <a href="#">
-              <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                <title>Evelyn</title>
-                <defs>
-                  <radialGradient cy="0%" fx="50%" fy="0%" r="100%" id="logo-gradient-footer">
-                    <stop stop-color="#00A2B8" offset="0%" />
-                    <stop stop-color="#00F9D2" offset="100%" />
-                  </radialGradient>
-                </defs>
-                <path
-                  d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zm0-10a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
-                  fill="url(#logo-gradient-footer)" fill-rule="evenodd" />
-              </svg>
-            </a>
-          </div>
-          <nav>
+          <nav class="footer-nav">
             <a href="https://github.com/Calaxsys" target="_blank" rel="noopener">Github</a>
             <a href="https://calaxsys.github.io/" target="_blank" rel="noopener">Github.io</a>
             <a href="https://calaxsys.github.io/web115/" target="_blank" rel="noopener">WEB115.io</a>
@@ -361,7 +344,7 @@
             <a href="https://jsfiddle.net/u/Calaxsys/fiddles/" target="_blank" rel="noopener">JSFiddle</a>
             <a href="https://www.linkedin.com/in/chris-troublefield/" target="_blank" rel="noopener">LinkedIn</a>
           </nav>
-          <p>Website Designed by <a href="troublefieldwebdesign.com/index.html">Troublefield Web Design</a> &copy; 2025
+          <p>Website Designed by <a href="/troublefieldwebdesign.com/index.html">Troublefield Web Design</a> &copy; 2025
             ||
             Certified in <a href="https://www.freecodecamp.org/certification/Calaxsys/responsive-web-design"
               target="_blank" rel="noopener">Responsive Web Design</a> &amp; <a
@@ -372,6 +355,7 @@
     </footer>
   </div>
   <script src="dist/js/main.min.js"></script>
+
 </body>
 
 </html>
