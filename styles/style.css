@@ -202,7 +202,6 @@ input {
   padding-block: 1rem;
   padding-left: 1rem;
   border: none;
-  border-radius: 0.5rem;
   margin-bottom: 1rem;
 }
 
@@ -273,9 +272,25 @@ form {
   margin-top: 2rem;
 }
 
+.course_entry {
+  margin-bottom: 2rem;
+}
+
+.course_entry>.form-group {
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.course_entry>.form-group>label {
+  max-width: none;
+  font-size: 1.75rem;
+}
+
+
 fieldset {
   border: 2px solid #FFBB20;
   border-radius: 0.5rem;
+  padding-right: 2rem;
 }
 
 legend {
@@ -336,7 +351,7 @@ legend {
 textarea {
   width: 100%;
   min-height: 100px;
-  resize: vertical;
+  resize: none;
   padding: 0.5rem;
   font-size: 1.2rem;
 }
