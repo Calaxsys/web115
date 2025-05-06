@@ -66,15 +66,15 @@ function courseToPage() {
 }
 
 function hideForm() {
-  document.getElementById('intro_form').style.display = "none";
+  document.getElementById('intro-form').style.display = "none";
 }
 
 function showForm() {
-  document.getElementById('intro_form').style.display = "block";
+  document.getElementById('intro-form').style.display = "block";
   document.getElementById('show_form_btn').style.display = 'none';
 }
 
-document.getElementById('intro_form').addEventListener('submit', function (event) {
+document.getElementById('intro-form').addEventListener('submit', function (event) {
   event.preventDefault();
   courseToPage();
   hideForm();
